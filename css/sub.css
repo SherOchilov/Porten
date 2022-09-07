@@ -1,0 +1,28 @@
+.sub{
+    background: #000;
+}
+
+.sub__wrapper{
+    padding: 17px 0 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub__title{
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #D0D0D0;    
+}
+
+.sub__link{
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #D0D0D0;
+}

@@ -1,0 +1,121 @@
+.h-top{
+    background: #000;
+}
+
+.h-top__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    
+}
+
+.h-top__left{
+    display: flex;
+}
+
+.h-top__text, 
+.h-top__symbol{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #969696;    
+}
+
+.h-top__icon{
+    margin-right: 15px;
+}
+
+
+.h-top__btn{
+    cursor: pointer;
+}
+
+.h-btm{
+    background: #0f0f0f;
+}
+
+.h-btm__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h-btm__menu{
+    display: flex;
+}
+
+.h-btm__link{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #969696; 
+    padding: 31px 20px;
+    transition: 400ms;   
+}
+
+.h-btm__link:hover{
+    background: #1f1f1f;
+    color: #fff;
+}
+
+.h-btm__link-mar{
+    color: #fff;
+}
+
+.h-btm__burger{
+    font-size: 28px;
+    color: #fff;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 575px) {
+    .h-top{
+        display: none;
+    }
+
+    .h-btm{
+        padding: 20px 0;
+    }
+
+    .h-btm__nav{
+        display: none;
+    }
+
+    .h-btm__burger{
+        display: block;
+    }
+}
+
+@media (max-width: 700px){
+    .h-btm__link{
+        font-size: 13px;
+        line-height: 15px;
+        padding: 24px 14px;
+    }
+}

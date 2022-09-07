@@ -1,0 +1,106 @@
+.brand {
+    background: #0F0F0F;
+}
+
+.brand__wrapper {
+    padding-top: 60px;
+    padding-bottom: 75px;
+}
+
+.brand__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand__title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.33;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.brand__line {
+    width: 120px;
+    height: 2px;
+    background: #fff;
+    margin: 40px 0 40px;
+}
+
+.brand__btm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand__img{
+    width: 100%;
+}
+
+
+
+@media(max-width:992px) {
+    .brand__btm{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .brand__line{
+        margin: 30px 0;
+    }
+
+    .brand__title{
+        font-size: 30px;
+    }
+
+    /* .brand__imgs{
+        width: 45%;
+    } */
+}
+
+
+@media(max-width:700px) {
+    .brand__btm{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .brand__line{
+        margin: 20px 0;
+    }
+
+    .brand__title{
+        font-size: 25px;
+    }
+
+    /* .brand__imgs{
+        width: 45%;
+    } */
+}
+
+
+@media(max-width:576px) {
+    .brand__btm{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .brand__line{
+        margin: 10px 0;
+    }
+
+    .brand__title{
+        font-size:20px;
+    }
+}

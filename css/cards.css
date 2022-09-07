@@ -1,0 +1,175 @@
+.cards {
+    background: #000000;
+    padding-top: 120px;
+}
+
+
+
+.cards__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+
+.cards-title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.cards-title::after {
+    content: '';
+    width: 120px;
+    height: 2px;
+    background: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.gen-card {
+    width: 260px;
+    height: 405px;
+    margin-bottom: 40px;
+    transition: 700ms;
+}
+
+.gen-card:hover {
+    transform: scale(1.05);
+}
+
+.gen-card__img-bl {
+    padding: 55px 22px;
+    background: #191B1C;
+}
+
+.gen-card__img {
+    width: 100%;
+}
+
+.gen-card__title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #FFFFFF;
+    margin: 25px 0 10px;
+}
+
+.gen-card__price {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.32;
+    color: #D0D0D0;
+}
+
+.gen__btn {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 12px 28px;
+    border: 1px solid #FFFFFF;
+    margin-top: 30px;
+    transition: 700ms;
+}
+
+.gen__btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+@media (max-width: 1200px) {
+    .gen-card__title {
+        font-size: 17px;
+    }
+
+    .gen-card__img-bl {
+        padding: 40px 10px;
+    }
+}
+
+@media (max-width:992px) {
+    .cards-title{
+        font-size: 28px;
+        padding-bottom: 30px;
+    }
+
+    .gen-title {
+        font-size: 32px;
+        padding-bottom: 35px;
+    }
+    .cards__top{
+        flex: 0 0 33%;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .gen-card{
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width:575px) {
+    .cards__top{
+        flex: 0 0 40%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .gen-card{
+        margin-bottom: 20px;
+    }
+
+    .cards-title{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .gen-title {
+        font-size: 27px;
+        padding-bottom: 30px;
+    }
+
+    .gen-card__title {
+        font-size: 14px;
+        margin: 10px 0 7px;
+    }
+
+    .gen-card__img-bl {
+        padding: 30px 10px;
+    }
+
+    .gen-card__price {
+        font-size: 13px;
+    }
+
+    .gen__btn {
+        font-size: 16px;
+        padding: 7px 20px;
+        margin-top: 20px;
+    }
+}
